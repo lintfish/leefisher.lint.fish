@@ -1110,3 +1110,22 @@ a:hover {
     max-width: none;
   }
 }
+
+/* ---- Preview password gate ---- */
+html.gate-locked body > *:not(.gate) { display: none !important; }
+html.gate-locked body { overflow: hidden; }
+.gate { position: fixed; inset: 0; z-index: 9999; display: grid; place-items: center; padding: 1.5rem;
+  background: radial-gradient(ellipse at 50% 30%, rgba(225, 6, 0, 0.18), transparent 60%), var(--bg); }
+.gate__box { width: min(100%, 24rem); background: var(--bg-card); border: 1px solid var(--line-strong);
+  border-top: 3px solid var(--accent); border-radius: var(--radius); padding: 2rem; display: grid; gap: 0.75rem; }
+.gate__kicker { margin: 0; color: var(--accent-text); font-family: var(--font-display); letter-spacing: 0.14em;
+  text-transform: uppercase; font-size: 0.8rem; }
+.gate__title { margin: 0 0 0.5rem; font-family: var(--font-display); text-transform: uppercase; color: var(--ink); font-size: 2rem; }
+.gate__label { color: var(--ink-soft); font-size: 0.9rem; }
+.gate__input { font: inherit; padding: 0.75rem 0.9rem; border-radius: 10px; border: 1px solid var(--line-strong);
+  background: var(--bg); color: var(--ink); }
+.gate__input:focus { outline: 2px solid var(--focus); outline-offset: 2px; }
+.gate__btn { font: inherit; font-family: var(--font-display); text-transform: uppercase; letter-spacing: 0.08em;
+  padding: 0.8rem 1rem; border: 0; border-radius: 999px; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+.gate__btn:hover { background: var(--accent-hover); }
+.gate__err { margin: 0; color: var(--accent-text); font-size: 0.9rem; }
