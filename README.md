@@ -10,7 +10,7 @@ This copy is a test preview: it is marked `noindex, nofollow`, and `robots.txt` 
 
 ```
 leefisher-site/
-  index.html         Home page (hero, about, courses, how it works, coverage, FAQs, vouchers, contact)
+  index.html         Home page (hero, about, lessons and prices, how it works, coverage, FAQs, vouchers, contact)
   testimonials.html  Testimonial from Elliot Beattie (EDAM)
   404.html           Custom not-found page
   CNAME           GitHub Pages custom domain: leefisher.lint.fish
@@ -49,7 +49,7 @@ The wordmark, page titles, and `tel:` / `sms:` links all read from that file. Th
 
 ## Notes
 
-- Prices are shown as provisional, as agreed.
+- Prices are hourly: £45 per hour with a two-hour minimum, plus 3-hour (£125), 5-hour (£200) and 10-hour (£380) packs. Gift vouchers are available for any of the hours or packages.
 - Past roles (police motorcyclist, IAM RoadSmart examiner, IAM Masters Mentor) are mentioned in plain text only. There are no IAM, RoadSmart, EDAM, or police logos. A disclaimer states the business is not affiliated with or endorsed by Police Scotland or IAM RoadSmart; on the testimonials page this also names EDAM.
 - Invented supporting copy (for example the “how it works” steps, and some course blurbs) is marked “Draft wording — to be confirmed.”
 - The site has not been published from this folder. Creating a GitHub repo, pushing, or going live needs an explicit OK.

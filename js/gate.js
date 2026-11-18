@@ -1,7 +1,7 @@
 /* Preview password gate. A light deterrent only, not real security. */
 (function () {
-  var SALT = "91921c2f276d95bc5281536f784fd521";
-  var HASH = "7cf4bf706cbb59c5979ba127d4f2d667e8d775475f161121b72f6992ed53fc16";
+  var SALT = "f36238d30e96e7ba80af93c5f714ad2e";
+  var HASH = "57106b327da99fa0e4c57e5e292c51e85e0aeec38c919047b1119ffd0c87b333";
   var KEY = "lf-preview-ok";
   var root = document.documentElement;
   try { if (localStorage.getItem(KEY) === HASH) return; } catch (e) {}
