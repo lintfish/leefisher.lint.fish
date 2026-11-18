@@ -18,8 +18,10 @@ leefisher-site/
   css/styles.css  Self-contained dark-only styles
   js/config.js    The one place to set the business name and phone number
   js/main.js      Applies the config, plus the mobile nav
-  img/logo.svg    Placeholder logo
-  README.md       This file
+  img/logo.svg        Placeholder logo
+  img/forth-map.svg   Coverage map (OpenStreetMap coastline)
+  tools/              Map build script and source GeoJSON (not linked from the site)
+  README.md           This file
 ```
 
 ## Changing the business name and phone number
@@ -38,9 +40,9 @@ The wordmark, page titles, and `tel:` / `sms:` links all read from that file. Th
 
 ## Design
 
-- Palette: near-black asphalt (`#080809`) with a hi-vis amber accent (`#ffb000`) and warm off-white text (`#f3efe6`).
+- Palette: near-black asphalt (`#080809`) with a racing-red accent (`#e10600`) and a slightly lighter red (`#ff4d42`) for small text and links, plus warm off-white text (`#f3efe6`). Buttons use white text on `#e10600`.
 - Fonts: [Oswald](https://fonts.google.com/specimen/Oswald) for display, [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3) for body text (Google Fonts).
-- Motifs: vanishing-point road, speed lines, a decorative tachometer, and a stylised Firth of Forth map — all CSS/SVG, no stock photographs.
+- Motifs: vanishing-point road, speed lines, a decorative tachometer, and an accurate Firth of Forth vector map built from OpenStreetMap data — all CSS/SVG, no stock photographs. Map data © OpenStreetMap contributors (ODbL).
 
 ## Notes
 
