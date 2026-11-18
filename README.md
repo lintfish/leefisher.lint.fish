@@ -10,8 +10,9 @@ This copy is a test preview: it is marked `noindex, nofollow`, and `robots.txt` 
 
 ```
 leefisher-site/
-  index.html      Home page (hero, about, courses, how it works, coverage, FAQs, vouchers, contact)
-  404.html        Custom not-found page
+  index.html         Home page (hero, about, courses, how it works, coverage, FAQs, vouchers, contact)
+  testimonials.html  Testimonial from Elliot Beattie (EDAM)
+  404.html           Custom not-found page
   CNAME           GitHub Pages custom domain: leefisher.lint.fish
   robots.txt      Disallows all crawlers
   favicon.svg     Chevron-in-bezel mark (matches the placeholder logo)
@@ -49,6 +50,6 @@ The wordmark, page titles, and `tel:` / `sms:` links all read from that file. Th
 ## Notes
 
 - Prices are shown as provisional, as agreed.
-- Past roles (police motorcyclist, IAM RoadSmart examiner, IAM Masters Mentor) are mentioned in plain text only. There are no IAM, RoadSmart, or police logos, and a disclaimer states the business is not affiliated with or endorsed by Police Scotland or IAM RoadSmart.
+- Past roles (police motorcyclist, IAM RoadSmart examiner, IAM Masters Mentor) are mentioned in plain text only. There are no IAM, RoadSmart, EDAM, or police logos. A disclaimer states the business is not affiliated with or endorsed by Police Scotland or IAM RoadSmart; on the testimonials page this also names EDAM.
 - Invented supporting copy (for example the “how it works” steps, and some course blurbs) is marked “Draft wording — to be confirmed.”
 - The site has not been published from this folder. Creating a GitHub repo, pushing, or going live needs an explicit OK.
