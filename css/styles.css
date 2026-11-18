@@ -391,63 +391,55 @@ a:hover {
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  padding: 3.2rem 0 5.5rem;
+  display: flex;
+  align-items: center;
+  min-height: min(42rem, 88vh);
+  padding: 5rem 0 5.5rem;
   border-bottom: 1px solid var(--line);
+  background: var(--bg);
 }
 
-.hero-art {
+.hero-media {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+}
+
+.hero-media picture,
+.hero-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 72% 48%;
+}
+
+.hero-overlay {
   position: absolute;
   inset: 0;
   z-index: -1;
   pointer-events: none;
-}
-
-.hero-road-svg {
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 64%;
-  opacity: 1;
-}
-
-.speed-lines {
-  position: absolute;
-  inset: 10% 0 38%;
   background:
-    repeating-linear-gradient(
+    linear-gradient(
+      90deg,
+      rgba(8, 8, 9, 0.96) 0%,
+      rgba(8, 8, 9, 0.9) 26%,
+      rgba(8, 8, 9, 0.58) 48%,
+      rgba(8, 8, 9, 0.2) 68%,
+      rgba(8, 8, 9, 0.28) 100%
+    ),
+    linear-gradient(
       180deg,
-      transparent 0 18px,
-      rgba(225, 6, 0, 0.08) 18px 19.5px,
-      transparent 19.5px 38px
+      rgba(8, 8, 9, 0.4) 0%,
+      transparent 24%,
+      transparent 72%,
+      rgba(8, 8, 9, 0.55) 100%
     );
-  mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
-  -webkit-mask-image: linear-gradient(90deg, transparent, #000 18%, #000 82%, transparent);
-  animation: speed-drift 22s linear infinite;
-  opacity: 0.55;
 }
 
-@keyframes speed-drift {
-  from { background-position: 0 0; }
-  to { background-position: 200px 0; }
-}
-
-.hero-grid {
-  display: grid;
-  gap: 2.5rem;
-  align-items: center;
-}
-
-@media (min-width: 900px) {
-  .hero {
-    padding: 4.2rem 0 7.5rem;
-  }
-
-  .hero-grid {
-    grid-template-columns: minmax(0, 1.15fr) minmax(16rem, 0.85fr);
-    gap: 3rem;
-  }
+.hero-copy {
+  position: relative;
+  max-width: 38rem;
 }
 
 .eyebrow {
@@ -458,6 +450,17 @@ a:hover {
   font-size: 0.92rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
+}
+
+.eyebrow::before {
+  content: "";
+  display: inline-block;
+  width: 1.55rem;
+  height: 2px;
+  margin-right: 0.7rem;
+  margin-bottom: 0.22em;
+  background: var(--accent);
+  vertical-align: middle;
 }
 
 .hero h1,
@@ -496,42 +499,38 @@ a:hover {
   gap: 0.75rem;
 }
 
-.hero-gauge {
-  display: flex;
-  justify-content: center;
+.hero .btn-ghost {
+  background: rgba(8, 8, 9, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
 }
 
-.tach {
-  width: min(100%, 24rem);
-  filter: drop-shadow(0 0 28px rgba(225, 6, 0, 0.12));
-}
+@media (max-width: 720px) {
+  .hero {
+    min-height: 46rem;
+    align-items: flex-end;
+    padding: 16rem 0 2.6rem;
+  }
 
-.tach-nums {
-  font-family: var(--font-display);
-  font-size: 22px;
-  font-weight: 600;
-  fill: var(--ink);
-  letter-spacing: 0.02em;
-}
+  .hero-media img {
+    object-position: 78% 16%;
+  }
 
-.tach-caption {
-  font-family: var(--font-display);
-  font-size: 13px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  fill: var(--accent-text);
-}
+  .hero-overlay {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(8, 8, 9, 0.1) 0%,
+        rgba(8, 8, 9, 0.12) 30%,
+        rgba(8, 8, 9, 0.7) 58%,
+        rgba(8, 8, 9, 0.96) 76%,
+        rgba(8, 8, 9, 0.98) 100%
+      );
+  }
 
-.tach-needle {
-  transform-origin: 200px 200px;
-  transform-box: view-box;
-  transform: rotate(302.4deg);
-  animation: needle-in 1.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
-
-@keyframes needle-in {
-  from { transform: rotate(135deg); }
-  to { transform: rotate(302.4deg); }
+  .headline {
+    max-width: none;
+  }
 }
 
 /* ----- Sections ----- */
@@ -627,8 +626,9 @@ a:hover {
 
 @media (min-width: 800px) {
   .about-grid {
-    grid-template-columns: minmax(0, 1.25fr) minmax(14rem, 0.7fr);
-    gap: 3rem;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, 1.05fr);
+    gap: 2.5rem;
+    align-items: center;
   }
 }
 
@@ -637,7 +637,15 @@ a:hover {
   max-width: 42rem;
 }
 
-.portrait {
+.photo-note {
+  margin: 0 0 1rem;
+  color: var(--ink-faint);
+  font-size: 0.88rem;
+  font-style: italic;
+}
+
+.portrait,
+.bike-panel {
   margin: 0;
   background: var(--bg-elev);
   border: 1px solid var(--line);
@@ -646,22 +654,17 @@ a:hover {
   box-shadow: var(--shadow);
 }
 
-.portrait-svg {
+.portrait picture,
+.bike-panel picture,
+.portrait img,
+.bike-panel img {
+  display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 280 / 340;
-  object-fit: cover;
 }
 
-.portrait-label {
-  font-family: var(--font-display);
-  font-size: 13px;
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
-  fill: var(--ink-faint);
-}
-
-.portrait figcaption {
+.portrait figcaption,
+.bike-caption {
   margin: 0;
   padding: 0.7rem 0.9rem 0.9rem;
   font-size: 0.88rem;
@@ -672,23 +675,10 @@ a:hover {
 
 .bike-panel {
   margin-top: 2.4rem;
-  padding: 1.25rem 1.25rem 1rem;
-  background: var(--bg-elev);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-}
-
-.bike-svg {
-  width: min(100%, 40rem);
-  margin-inline: auto;
-  color: var(--ink);
 }
 
 .bike-caption {
-  margin: 0.6rem 0 0;
   text-align: center;
-  font-size: 0.88rem;
-  color: var(--ink-faint);
 }
 
 /* ----- Prices ----- */
@@ -1116,15 +1106,6 @@ a:hover {
 }
 
 @media (max-width: 480px) {
-  .hero {
-    padding-bottom: 3.5rem;
-  }
-
-  .hero-road-svg {
-    height: 38%;
-    opacity: 0.7;
-  }
-
   .headline {
     max-width: none;
   }

@@ -20,6 +20,7 @@ leefisher-site/
   js/main.js      Applies the config, plus the mobile nav
   img/logo.svg        Placeholder logo
   img/forth-map.svg   Coverage map (OpenStreetMap coastline)
+  img/photos/         Hero, coaching and bike photographs (AI-generated placeholders, JPG + WebP)
   tools/              Map build script and source GeoJSON (not linked from the site)
   README.md           This file
 ```
@@ -42,7 +43,8 @@ The wordmark, page titles, and `tel:` / `sms:` links all read from that file. Th
 
 - Palette: near-black asphalt (`#080809`) with a racing-red accent (`#e10600`) and a slightly lighter red (`#ff4d42`) for small text and links, plus warm off-white text (`#f3efe6`). Buttons use white text on `#e10600`.
 - Fonts: [Oswald](https://fonts.google.com/specimen/Oswald) for display, [Source Sans 3](https://fonts.google.com/specimen/Source+Sans+3) for body text (Google Fonts).
-- Motifs: vanishing-point road, speed lines, a decorative tachometer, and an accurate Firth of Forth vector map built from OpenStreetMap data — all CSS/SVG, no stock photographs. Map data © OpenStreetMap contributors (ODbL).
+- Motifs: a full-bleed hero photograph, coaching and bike photographs, and an accurate Firth of Forth vector map built from OpenStreetMap data. Map data © OpenStreetMap contributors (ODbL).
+- Photographs in `img/photos/` are AI-generated placeholders, not pictures of Lee, his bike, or a real session. They are provided as WebP with JPG fallbacks.
 
 ## Notes
 
