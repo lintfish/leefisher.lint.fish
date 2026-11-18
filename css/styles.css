@@ -1118,8 +1118,8 @@ a:hover {
 
 /* ----- Testimonials / pull-quote ----- */
 
-.section-quote {
-  padding: 1.2rem 0 4.2rem;
+.section-quote .pull-quote {
+  max-width: 46rem;
 }
 
 .pull-quote {
