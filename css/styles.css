@@ -1,6 +1,6 @@
-/* [Business Name] preview site — dark, motorcycle-inspired, no build step.
-   Accent and typography tokens live at the top; the business name itself
-   is set in js/config.js, not here. */
+/* Forth Rider Training preview site — dark, motorcycle-inspired, no build step.
+   Accent and typography tokens live at the top; the name in titles and the
+   footer is set in js/config.js. */
 
 :root {
   color-scheme: dark;
@@ -205,12 +205,40 @@ a:hover {
   border-radius: 10px;
 }
 
-.brand:hover {
+.wordmark {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.12em;
+  line-height: 1;
+  min-width: 0;
+}
+
+.wordmark-lead {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: 0.1em;
+}
+
+.wordmark-rest {
+  font-weight: 500;
+  font-size: 0.62rem;
+  letter-spacing: 0.16em;
+  color: var(--ink-soft);
+}
+
+.brand:hover,
+.brand:hover .wordmark-rest {
   color: var(--accent);
 }
 
-.brand[aria-current="page"] {
+.brand[aria-current="page"],
+.brand[aria-current="page"] .wordmark-rest {
   color: var(--ink);
+}
+
+.brand[aria-current="page"] .wordmark-rest {
+  color: var(--ink-soft);
 }
 
 .nav-toggle {
@@ -467,6 +495,11 @@ a:hover {
   vertical-align: middle;
 }
 
+.eyebrow-place {
+  display: block;
+  margin-top: 0.28em;
+}
+
 .hero h1,
 .page h1 {
   margin: 0 0 0.7rem;
@@ -476,6 +509,21 @@ a:hover {
   line-height: 0.92;
   letter-spacing: 0.02em;
   text-transform: uppercase;
+}
+
+.hero h1 {
+  font-size: clamp(3.1rem, 9vw, 5.8rem);
+  line-height: 0.86;
+  letter-spacing: 0.04em;
+}
+
+.hero-name-rest {
+  display: block;
+  margin-top: 0.18em;
+  font-size: 0.38em;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  line-height: 1;
 }
 
 .headline {
