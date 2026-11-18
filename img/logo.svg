@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="logo-title">
+  <title id="logo-title">Placeholder logo</title>
+  <rect width="64" height="64" rx="14" fill="#121214"/>
+  <circle cx="32" cy="32" r="26" fill="#0a0a0b" stroke="#ffb000" stroke-width="1.6"/>
+  <g fill="none" stroke="#ffb000" stroke-width="1.35" stroke-linecap="round">
+    <line x1="57.50" y1="32.00" x2="53.20" y2="32.00" />
+    <line x1="54.08" y1="44.75" x2="51.92" y2="43.50" />
+    <line x1="44.75" y1="54.08" x2="43.50" y2="51.92" />
+    <line x1="32.00" y1="57.50" x2="32.00" y2="53.20" />
+    <line x1="19.25" y1="54.08" x2="20.50" y2="51.92" />
+    <line x1="9.92" y1="44.75" x2="12.08" y2="43.50" />
+    <line x1="6.50" y1="32.00" x2="10.80" y2="32.00" />
+    <line x1="9.92" y1="19.25" x2="12.08" y2="20.50" />
+    <line x1="19.25" y1="9.92" x2="20.50" y2="12.08" />
+    <line x1="32.00" y1="6.50" x2="32.00" y2="10.80" />
+    <line x1="44.75" y1="9.92" x2="43.50" y2="12.08" />
+    <line x1="54.08" y1="19.25" x2="51.92" y2="20.50" />
+  </g>
+  <g fill="#ffb000">
+    <path d="M32 15.5 45 28.3h-5.4L32 20.8l-7.6 7.5H19Z"/>
+    <path d="M32 24.2 45 37h-5.4L32 29.5l-7.6 7.5H19Z"/>
+    <path d="M32 32.9 45 45.7h-5.4L32 38.2l-7.6 7.5H19Z"/>
+  </g>
+</svg>
