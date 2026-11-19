@@ -1,6 +1,6 @@
 # Level 33 Training — preview
 
-Local preview of the static site for Level 33 Training, Lee Fisher’s advanced motorcycle training business, intended later for GitHub Pages at `https://leefisher.lint.fish`.
+Local preview of the static site for Level 33 Training, Lee Fisher’s advanced motorcycle training business, intended later for GitHub Pages at `https://level33.training`.
 
 Plain HTML, CSS, and a little vanilla JavaScript. No build step, no bundler, no package manager.
 
@@ -13,7 +13,7 @@ leefisher-site/
   index.html         Home page (hero, about, lessons and prices, how it works, coverage, FAQs, vouchers, contact)
   testimonials.html  Testimonial from Elliot Beattie (EDAM)
   404.html           Custom not-found page
-  CNAME           GitHub Pages custom domain: leefisher.lint.fish
+  CNAME           GitHub Pages custom domain: level33.training
   robots.txt      Disallows all crawlers
   favicon.svg     Chevron-in-bezel mark (matches the placeholder logo)
   css/styles.css  Self-contained dark-only styles
