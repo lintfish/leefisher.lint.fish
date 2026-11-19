@@ -5,7 +5,7 @@
    reads from here.
    ============================================================================= */
 window.SITE_CONFIG = {
-  businessName: "Fisher Advanced",
+  businessName: "Level 33 Training",
   phoneDisplay: "07XXX XXXXXX",
   /* Digits-only form used in tel: and sms: links (no spaces). */
   phoneTel: "07XXXXXXXXX"
