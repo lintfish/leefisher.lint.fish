@@ -1,6 +1,6 @@
-# Forth Rider Training — preview
+# Fisher Advanced — preview
 
-Local preview of the static site for Forth Rider Training, Lee Fisher’s advanced motorcycle training business, intended later for GitHub Pages at `https://leefisher.lint.fish`.
+Local preview of the static site for Fisher Advanced, Lee Fisher’s advanced motorcycle training business, intended later for GitHub Pages at `https://leefisher.lint.fish`.
 
 Plain HTML, CSS, and a little vanilla JavaScript. No build step, no bundler, no package manager.
 
@@ -28,11 +28,11 @@ leefisher-site/
 
 ## Changing the phone number
 
-The trading name is Forth Rider Training. Page titles, the footer and `tel:` / `sms:` links read from `js/config.js`. The header uses a simple text wordmark beside the existing symbol-only logo mark, which is still a placeholder (no name drawn into the SVG). To change the phone number, edit that file only:
+The trading name is Fisher Advanced. Page titles, the footer and `tel:` / `sms:` links read from `js/config.js`. The header uses a simple text wordmark beside the existing symbol-only logo mark, which is still a placeholder (no name drawn into the SVG). To change the phone number, edit that file only:
 
 ```js
 window.SITE_CONFIG = {
-  businessName: "Forth Rider Training",
+  businessName: "Fisher Advanced",
   phoneDisplay: "07XXX XXXXXX",
   phoneTel: "07XXXXXXXXX"
 };

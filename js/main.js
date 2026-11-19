@@ -3,7 +3,7 @@
   "use strict";
 
   var config = window.SITE_CONFIG || {};
-  var name = config.businessName || "Forth Rider Training";
+  var name = config.businessName || "Fisher Advanced";
   var phoneDisplay = config.phoneDisplay || "07XXX XXXXXX";
   var phoneTel = config.phoneTel || String(phoneDisplay).replace(/\s+/g, "");
 
